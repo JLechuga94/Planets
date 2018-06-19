@@ -16,12 +16,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
         self.sceneView.session.run(configuration)
+        self.sceneView.autoenablesDefaultLighting = true
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func viewDidAppear(_ animated: Bool) {
         let earth = SCNNode()
         earth.geometry = SCNSphere(radius: 0.2)
-        earth.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Earth_day")
+        earth.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "EarthDay")
+        earth.geometry?.firstMaterial?.specular.contents = UIImage(named: "EarthSpecular")
+        earth.geometry?.firstMaterial?.emission.contents = UIImage(named: "EarthEmission")
+        earth.geometry?.firstMaterial?.normal.contents = UIImage(named: "EarthNormalMap")
         earth.position = SCNVector3(0,0,-1)
         self.sceneView.scene.rootNode.addChildNode(earth)
         
