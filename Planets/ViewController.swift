@@ -7,14 +7,23 @@
 //
 
 import UIKit
-
+import ARKit
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sceneView: ARSCNView!
+    let configuration = ARWorldTrackingConfiguration()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        self.sceneView.session.run(configuration)
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        let earth = SCNNode()
+        earth.geometry = SCNSphere(radius: 0.2)
+        earth.position = SCNVector3(0,0,-1)
+        self.sceneView.scene.rootNode.addChildNode(earth)
+    }
 
 }
 
