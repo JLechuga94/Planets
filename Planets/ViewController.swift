@@ -24,7 +24,14 @@ class ViewController: UIViewController {
         earth.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Earth_day")
         earth.position = SCNVector3(0,0,-1)
         self.sceneView.scene.rootNode.addChildNode(earth)
+        
+        let EarthRotation = SCNAction.rotateBy(x: 0, y: CGFloat(360.degreesToRadians), z: 0, duration: 15)
+        let infiniteAction = SCNAction.repeatForever(EarthRotation)
+        earth.runAction(infiniteAction)
     }
 
 }
 
+extension Int {
+    var degreesToRadians: Double { return Double(self) * .pi/180}
+}
