@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let earth = SCNNode()
         earth.geometry = SCNSphere(radius: 0.2)
+        earth.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Earth_day")
         earth.position = SCNVector3(0,0,-1)
         self.sceneView.scene.rootNode.addChildNode(earth)
     }

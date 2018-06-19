@@ -11,10 +11,10 @@
 		7D41699620D8A05900AB37D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D41699520D8A05900AB37D8 /* ViewController.swift */; };
 		7D41699920D8A05900AB37D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D41699720D8A05900AB37D8 /* Main.storyboard */; };
 		7D41699C20D8A05900AB37D8 /* Planets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D41699A20D8A05900AB37D8 /* Planets.xcdatamodeld */; };
-		7D41699E20D8A05A00AB37D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D41699D20D8A05A00AB37D8 /* Assets.xcassets */; };
 		7D4169A120D8A05A00AB37D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D41699F20D8A05A00AB37D8 /* LaunchScreen.storyboard */; };
 		7D4169AC20D8A05A00AB37D8 /* PlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4169AB20D8A05A00AB37D8 /* PlanetsTests.swift */; };
 		7D4169B720D8A05A00AB37D8 /* PlanetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4169B620D8A05A00AB37D8 /* PlanetsUITests.swift */; };
+		7D4169C420D8A4E400AB37D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D41699D20D8A05A00AB37D8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,8 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4169C420D8A4E400AB37D8 /* Assets.xcassets in Resources */,
 				7D4169A120D8A05A00AB37D8 /* LaunchScreen.storyboard in Resources */,
-				7D41699E20D8A05A00AB37D8 /* Assets.xcassets in Resources */,
 				7D41699920D8A05900AB37D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
